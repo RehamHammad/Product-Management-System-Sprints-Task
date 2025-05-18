@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Management System Using OOP</title>
+    <link rel="stylesheet" href="bootstrap-5.3.6-dist/css/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+  <body>
+    <h1 class="text-center mt-5">Product Management System</h1>
+    <div class="container w-75 m-auto p-5">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="mx-auto my-5 form-bg shadow p-5">
+            <div class="form-floating mb-3">
+              <input
+                type="email"
+                class="form-control border-0 border-bottom"
+                id="productName"
+                placeholder="Product Name"
+              />
+              <label for="floatingInput">Product Name </label>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="number"
+                class="form-control border-0 border-bottom"
+                id="productPrice"
+                placeholder="Product Price"
+              />
+              <label for="floatingInput">Product Price </label>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="text"
+                list="categories"
+                class="form-control border-0 border-bottom"
+                id="productCategory"
+                placeholder="Product Category"
+              />
+              <label for="floatingInput">Product Category </label>
+              <datalist id="categories">
+                  <option value="TV" ></option>
+                  <option value="Mobile" ></option>
+                  <option value="Laptop" ></option>
+                  <option value="Screens" ></option>
+                  <option value="Electronics" ></option>
+
+              </datalist>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="file"
+                class="form-control border-0 border-bottom"
+                id="productImage"
+                placeholder="Product Image"
+              />
+              <label for="productImage"> Product Image</label>
+            </div>
+            <button id="addBtn" type="button" onclick="addProduct()" class="btn add-btn">
+              Add Product
+            </button>
+            <button id="updateBtn" type="button" onclick="updateProduct()" class="btn update-btn ms-2 d-none">
+              Update Product
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container w-75 mt-2 p-5">
+        <h2>Product List</h2>
+       <div class="row">
+        <div class="col-12">
+            <table class="table table-striped mt-3 w-100" >
+                    <thead class="text-center">
+                       
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Category</th>
+                        <th>Image</th>
+                        <th> </th>
+                        <th> </th>
+                    </thead>
+                    <tbody id="Body" class="text-center">
+                        
+                         
+                   
+                    </tbody>
+                </table>
+        </div>
+       </div>
+    </div>
+
+    <script src="bootstrap-5.3.6-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

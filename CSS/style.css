@@ -1,0 +1,41 @@
+body{
+    background-color: #F1E7E7;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+h1{
+    color: #333;
+}
+
+/* .form-bg{
+    background-color: #E69DB8 !important;
+} */
+.form-control{
+    background-color: #FFD0C7 !important;
+}
+.form-control:focus{box-shadow: none;}
+
+.add-btn{
+    background-color: #E69DB8;
+    font-size: 15px;
+}
+.add-btn:hover{background-color: rgba(230, 157, 184,0.8);}
+.update-btn{
+    background-color: #FFFECE !important ;
+}
+.update-icon{
+    color: #FFFECE !important;
+    background-color: transparent;
+    border: none;
+}
+
+thead th{background-color: #E69DB8 !important;}
+tbody tr td{background-color: #FFD0C7 !important;}
+.delete-btn{
+    background-color: transparent;
+    border: none;
+}
+.update-btn{
+    background-color: transparent;
+    border: none;
+}
